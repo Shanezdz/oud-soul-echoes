@@ -326,7 +326,7 @@ function Contact() {
           <div className="mt-12 space-y-5 text-sm">
             <div>
               <p className="eyebrow">{t("ct.phone")}</p>
-              <a href="tel:+213791134982" dir="ltr" className="link-thread mt-1 block font-display text-2xl text-ivory" style={{ unicodeBidi: "isolate" }}>+213 791 134 982</a>
+              <a href="tel:+213791134982" dir="ltr" className="link-thread mt-1 inline-block whitespace-nowrap text-ivory text-lg sm:text-xl md:text-2xl tracking-wide tabular-nums" style={{ unicodeBidi: "isolate", fontFamily: "var(--font-body)", fontVariantNumeric: "tabular-nums" }}>+213 791 134 982</a>
             </div>
             <div>
               <p className="eyebrow">{t("ct.email")}</p>
@@ -397,7 +397,7 @@ function Footer() {
         </div>
         <div className="md:col-span-3">
           <p className="eyebrow mb-4">{t("ft.contact")}</p>
-          <p dir="ltr" className="text-sm text-muted-foreground" style={{ unicodeBidi: "isolate" }}>+213 791 134 982</p>
+          <p dir="ltr" className="whitespace-nowrap text-sm text-muted-foreground tracking-wide tabular-nums" style={{ unicodeBidi: "isolate", fontFamily: "var(--font-body)", fontVariantNumeric: "tabular-nums" }}>+213 791 134 982</p>
           <p className="text-sm text-muted-foreground break-all">sensabyldzbeghdadi@gmail.com</p>
         </div>
       </div>
