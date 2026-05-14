@@ -114,20 +114,13 @@ function About() {
 
 function Univers() {
   const { t } = useI18n();
-  const cards = [1, 2, 3, 4].map((i) => ({ n: `0${i}`, title: t(`univers.c${i}.t`), text: t(`univers.c${i}.d`) }));
   return (
     <section id="univers" className="relative border-t border-border px-6 py-32 md:px-10 md:py-44" style={{ backgroundImage: "var(--gradient-stage)" }}>
       <div className="mx-auto max-w-[1280px]">
         <SectionTitle eyebrow={t("univers.eyebrow")} title={t("univers.title")} />
-        <div className="mt-20 grid gap-px bg-border md:grid-cols-2">
-          {cards.map((c) => (
-            <article key={c.n} className="group relative bg-background p-10 transition duration-700 hover:bg-card md:p-14">
-              <span className="font-display text-sm tracking-[0.3em] text-copper">{c.n}</span>
-              <h3 className="mt-4 font-display text-3xl leading-tight text-ivory md:text-4xl">{c.title}</h3>
-              <p className="mt-5 max-w-md text-[0.95rem] leading-relaxed text-muted-foreground">{c.text}</p>
-              <div className="mt-10 h-px w-12 bg-copper transition-all duration-700 group-hover:w-32" />
-            </article>
-          ))}
+        <div className="mt-16 grid max-w-3xl gap-8 text-[1.05rem] leading-relaxed text-muted-foreground md:mt-20">
+          <p>{t("univers.p1")}</p>
+          <p>{t("univers.p2")}</p>
         </div>
       </div>
     </section>
