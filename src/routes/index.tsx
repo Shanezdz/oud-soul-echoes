@@ -82,9 +82,6 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 text-[0.6rem] uppercase tracking-[0.4em] text-muted-foreground">
-        <span className="inline-block animate-string">{t("hero.scroll")}</span>
-      </div>
     </section>
   );
 }
