@@ -38,7 +38,8 @@
 
   --font-display: "Cormorant Garamond", "Cormorant", ui-serif, Georgia, serif;
   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-arabic: "Amiri", "Cormorant Garamond", serif;
+  --font-arabic-display: "Reem Kufi", "Tajawal", sans-serif;
+  --font-arabic-body: "Tajawal", "Noto Kufi Arabic", sans-serif;
 }
 
 :root {
