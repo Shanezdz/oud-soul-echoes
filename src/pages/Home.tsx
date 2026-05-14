@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { useI18n } from "@/lib/i18n";
 
@@ -11,27 +10,7 @@ import violin from "@/assets/violin.jpg";
 import desert from "@/assets/desert-night.jpg";
 import stage from "@/assets/stage.jpg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Sensabyl Beghdadi | Auteur, compositeur, musicien Oud et violon" },
-      { name: "description", content: "Découvrez l'univers musical de Sensabyl Beghdadi, auteur, compositeur, interprète, musicien Oud et violon." },
-      { property: "og:title", content: "Sensabyl Beghdadi — Jouer pour les âmes" },
-      { property: "og:description", content: "Auteur, compositeur, interprète, musicien Oud et violon." },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
-    ],
-    links: [
-      { rel: "canonical", href: "/" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&family=Readex+Pro:wght@300;400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" },
-    ],
-  }),
-  component: Home,
-});
-
-function Home() {
+export default function Home() {
   return (
     <div id="top" className="relative overflow-hidden bg-background text-foreground">
       <Nav />
