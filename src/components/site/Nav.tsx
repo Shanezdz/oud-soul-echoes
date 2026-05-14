@@ -33,12 +33,8 @@ export function Nav() {
       }`}
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 md:px-10">
-        <a href="#top" className="flex flex-col leading-none">
-          <span className="font-display text-xl tracking-wide text-ivory">
-            Sensabyl <span className="text-copper">Beghdadi</span>
-          </span>
-          <span className="eyebrow mt-1 text-[0.55rem]">Oud · Violon · Composition</span>
-        </a>
+        <a href="#top" aria-label="Accueil" className="h-6 w-6" />
+
 
         <nav className="hidden items-center gap-7 lg:flex">
           {links.map((l) => (
