@@ -257,7 +257,7 @@ function Ecouter() {
   // Piste 1 : Taksim sur maqâm Bayati (fichier servi depuis /public).
   // Les autres pistes utilisent VITE_AUDIO_URL si défini, sinon bouton décoratif.
   const fallback = import.meta.env.VITE_AUDIO_URL as string | undefined;
-  const audios: (string | undefined)[] = ["/audio/taksim-bayati.mp3", "/audio/el-janoube-el-wahrani.mp3", fallback, fallback, fallback, fallback];
+  const audios: (string | undefined)[] = ["/audio/taksim-bayati.mp3", "/audio/el-janoube-el-wahrani.mp3", "/audio/boussadia-sound.mp3", fallback, fallback, fallback];
   const tracks = [1,2,3,4,5,6].map((i) => ({ t: t(`ec.${i}.t`), d: t(`ec.${i}.d`), dur: ["6:42","5:18","4:05","7:11","8:34","5:50"][i-1], src: audios[i-1] }));
   return (
     <section id="ecouter" className="relative border-t border-border bg-card/40 px-6 py-32 md:px-10 md:py-44">
