@@ -7,7 +7,7 @@ const links = [
   { href: "#parcours", label: "Parcours" },
   { href: "#scene", label: "Scène" },
   { href: "#residences", label: "Résidences" },
-  { href: "#galerie", label: "Galerie" },
+  
   { href: "#ecouter", label: "Écouter" },
   
   { href: "#contact", label: "Contact" },
