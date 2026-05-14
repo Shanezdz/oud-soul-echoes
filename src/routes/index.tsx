@@ -74,7 +74,7 @@ function Home() {
       <Residences />
       
       <Ecouter />
-      <Presse />
+      
       <Contact />
       <Footer />
     </div>
@@ -642,47 +642,6 @@ function FauxPlayer({ index, t, d, dur }: { index: number; t: string; d: string;
   );
 }
 
-/* ------------------------------ PRESSE ---------------------------- */
-function Presse() {
-  const downloads = [
-    { t: "Dossier artistique", d: "PDF · 8 pages" },
-    { t: "Biographie courte", d: "Texte · 1 page" },
-    { t: "Biographie longue", d: "Texte · 3 pages" },
-    { t: "Photos HD", d: "Archive · portraits & scène" },
-    { t: "Fiche technique", d: "PDF · plateau & son" },
-    { t: "Press kit complet", d: "Sur demande" },
-  ];
-  return (
-    <section id="presse" className="relative border-t border-border px-6 py-32 md:px-10 md:py-44">
-      <div className="mx-auto max-w-[1280px]">
-        <SectionTitle
-          eyebrow="Presse & dossier"
-          title="Dossier, presse et programmation"
-        />
-
-        <div className="mt-16 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
-          {downloads.map((d) => (
-            <a
-              key={d.t}
-              href="#contact"
-              className="group flex items-center justify-between bg-background p-8 transition hover:bg-card"
-            >
-              <div>
-                <p className="font-display text-xl text-ivory">{d.t}</p>
-                <p className="mt-1 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                  {d.d}
-                </p>
-              </div>
-              <span className="font-display text-2xl text-copper transition group-hover:translate-x-1">
-                ↓
-              </span>
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 /* ------------------------------ CONTACT --------------------------- */
 function Contact() {
