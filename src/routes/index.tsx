@@ -275,7 +275,10 @@ function Residences() {
 
 function Ecouter() {
   const { t } = useI18n();
-  const audios: (string | undefined)[] = [undefined, undefined, undefined, undefined, undefined, undefined];
+  // Aucune source audio locale embarquée. Pour activer la lecture, définir VITE_AUDIO_URL
+  // (une URL distante CDN/S3/Cloud). Sinon le bouton play est purement décoratif.
+  const fallback = import.meta.env.VITE_AUDIO_URL as string | undefined;
+  const audios: (string | undefined)[] = [fallback, fallback, fallback, fallback, fallback, fallback];
   const tracks = [1,2,3,4,5,6].map((i) => ({ t: t(`ec.${i}.t`), d: t(`ec.${i}.d`), dur: ["6:42","5:18","4:05","7:11","8:34","5:50"][i-1], src: audios[i-1] }));
   return (
     <section id="ecouter" className="relative border-t border-border bg-card/40 px-6 py-32 md:px-10 md:py-44">
