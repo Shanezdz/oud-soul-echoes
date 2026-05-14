@@ -37,18 +37,8 @@ const translations: Translations = {
 
     "univers.eyebrow": "Univers musical",
     "univers.title": "Des maqâms aux paysages intérieurs",
-    "univers.c1.t": "Le Oud comme matrice",
-    "univers.c1.d":
-      "Instrument ancien, porteur d'une mémoire plurimillénaire, le Oud devient entre ses mains un espace de méditation, de transmission et d'expérimentation.",
-    "univers.c2.t": "Le violon comme ligne de lumière",
-    "univers.c2.d":
-      "Le violon prolonge la voix du Oud, ouvre des trajectoires mélodiques et inscrit la musique dans une dramaturgie sensible.",
-    "univers.c3.t": "Improvisation & maqâms",
-    "univers.c3.d":
-      "Son travail explore les intervalles, les modes, les tensions subtiles et les respirations de l'improvisation, entre architecture musicale et liberté du geste.",
-    "univers.c4.t": "Scène, nature & création contemporaine",
-    "univers.c4.d":
-      "Sa recherche sonore fait dialoguer la scène, les paysages, les matières naturelles et les récits humains.",
+    "univers.p1": "L'univers musical de Sensabyl Beghdadi se déploie entre héritage, improvisation et création contemporaine. Nourrie par les maqâms, les résonances du Maghreb, les mémoires andalouses et les paysages intérieurs, son œuvre cherche moins à illustrer qu'à révéler.",
+    "univers.p2": "Quatre axes traversent sa recherche : l'instrument comme matière vivante, la voix mélodique comme souffle, le mode comme architecture sensible, et le paysage comme source d'écoute et de composition. Le Oud, le violon, les silences et les matières du monde y deviennent les fragments d'une même géographie sonore.",
 
     "oud.eyebrow": "L'instrument",
     "oud.title": "Le Oud de Sensabyl, une architecture de résonance",
