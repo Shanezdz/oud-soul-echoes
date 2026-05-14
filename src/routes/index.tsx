@@ -276,7 +276,7 @@ function Ecouter() {
         <div className="mt-16 divide-y divide-border border-y border-border">
           {tracks.map((tr, i) => <FauxPlayer key={i} index={i+1} {...tr} />)}
         </div>
-        <p className="mt-10 text-center text-xs uppercase tracking-[0.25em] text-muted-foreground">{t("ec.note")}</p>
+        
       </div>
     </section>
   );
