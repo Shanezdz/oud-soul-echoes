@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { useI18n } from "@/lib/i18n";
 
 import heroOud from "@/assets/hero-oud.jpg";
 import portrait from "@/assets/sensabyl-portrait.jpg";
+import taksimBayati from "@/assets/taksim-bayati.mp3";
 import oudHeadstock from "@/assets/oud-headstock.jpg";
 import oudStrings from "@/assets/oud-strings.jpg";
 import violin from "@/assets/violin.jpg";
@@ -275,7 +276,8 @@ function Residences() {
 
 function Ecouter() {
   const { t } = useI18n();
-  const tracks = [1,2,3,4,5,6].map((i) => ({ t: t(`ec.${i}.t`), d: t(`ec.${i}.d`), dur: ["6:42","5:18","4:05","7:11","8:34","5:50"][i-1] }));
+  const audios: (string | undefined)[] = [taksimBayati, undefined, undefined, undefined, undefined, undefined];
+  const tracks = [1,2,3,4,5,6].map((i) => ({ t: t(`ec.${i}.t`), d: t(`ec.${i}.d`), dur: ["6:42","5:18","4:05","7:11","8:34","5:50"][i-1], src: audios[i-1] }));
   return (
     <section id="ecouter" className="relative border-t border-border bg-card/40 px-6 py-32 md:px-10 md:py-44">
       <div className="mx-auto max-w-[1100px]">
@@ -289,17 +291,27 @@ function Ecouter() {
   );
 }
 
-function FauxPlayer({ index, t: title, d, dur }: { index: number; t: string; d: string; dur: string }) {
+function FauxPlayer({ index, t: title, d, dur, src }: { index: number; t: string; d: string; dur: string; src?: string }) {
   const [playing, setPlaying] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const toggle = () => {
+    if (!src) { setPlaying((v) => !v); return; }
+    const a = audioRef.current;
+    if (!a) return;
+    if (a.paused) { a.play(); setPlaying(true); } else { a.pause(); setPlaying(false); }
+  };
   return (
     <div className="grid grid-cols-[auto_1fr_auto] items-center gap-6 py-6">
-      <button onClick={() => setPlaying((v) => !v)} className="flex h-12 w-12 items-center justify-center rounded-full border border-copper text-copper transition hover:bg-copper hover:text-primary-foreground" aria-label={playing ? "Pause" : "Play"}>
+      <button onClick={toggle} className="flex h-12 w-12 items-center justify-center rounded-full border border-copper text-copper transition hover:bg-copper hover:text-primary-foreground" aria-label={playing ? "Pause" : "Play"}>
         {playing ? <span className="flex gap-1"><span className="h-3 w-1 bg-current" /><span className="h-3 w-1 bg-current" /></span> : <span className="ml-0.5 border-y-[6px] border-l-[9px] border-y-transparent border-l-current" />}
       </button>
       <div>
         <p className="font-display text-xs tracking-[0.3em] text-copper">{String(index).padStart(2, "0")}</p>
         <p className="mt-1 font-display text-xl text-ivory md:text-2xl">{title}</p>
         <p className="text-sm text-muted-foreground">{d}</p>
+        {src && (
+          <audio ref={audioRef} src={src} preload="none" onEnded={() => setPlaying(false)} onPause={() => setPlaying(false)} onPlay={() => setPlaying(true)} className="sr-only" />
+        )}
         {playing && (
           <div className="mt-3 flex h-6 items-end gap-0.5">
             {Array.from({ length: 40 }).map((_, i) => (
