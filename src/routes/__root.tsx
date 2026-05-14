@@ -73,14 +73,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Sensabyl" },
+      { name: "description", content: "Official website for Sensabyl Beghdadi, author, composer, and musician of Oud and violin." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Sensabyl" },
+      { property: "og:description", content: "Official website for Sensabyl Beghdadi, author, composer, and musician of Oud and violin." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Sensabyl" },
+      { name: "twitter:description", content: "Official website for Sensabyl Beghdadi, author, composer, and musician of Oud and violin." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8aaaffa5-780c-4ce0-9fb2-e4a6fbbbe17e/id-preview-cc9fcaac--5bb4008c-0427-4aaf-8f86-141543003809.lovable.app-1778778398264.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8aaaffa5-780c-4ce0-9fb2-e4a6fbbbe17e/id-preview-cc9fcaac--5bb4008c-0427-4aaf-8f86-141543003809.lovable.app-1778778398264.png" },
     ],
     links: [
       {
