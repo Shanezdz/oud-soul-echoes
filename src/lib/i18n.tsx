@@ -37,18 +37,8 @@ const translations: Translations = {
 
     "univers.eyebrow": "Univers musical",
     "univers.title": "Des maqâms aux paysages intérieurs",
-    "univers.c1.t": "Le Oud comme matrice",
-    "univers.c1.d":
-      "Instrument ancien, porteur d'une mémoire plurimillénaire, le Oud devient entre ses mains un espace de méditation, de transmission et d'expérimentation.",
-    "univers.c2.t": "Le violon comme ligne de lumière",
-    "univers.c2.d":
-      "Le violon prolonge la voix du Oud, ouvre des trajectoires mélodiques et inscrit la musique dans une dramaturgie sensible.",
-    "univers.c3.t": "Improvisation & maqâms",
-    "univers.c3.d":
-      "Son travail explore les intervalles, les modes, les tensions subtiles et les respirations de l'improvisation, entre architecture musicale et liberté du geste.",
-    "univers.c4.t": "Scène, nature & création contemporaine",
-    "univers.c4.d":
-      "Sa recherche sonore fait dialoguer la scène, les paysages, les matières naturelles et les récits humains.",
+    "univers.p1": "L'univers musical de Sensabyl Beghdadi se déploie entre héritage, improvisation et création contemporaine. Nourrie par les maqâms, les résonances du Maghreb, les mémoires andalouses et les paysages intérieurs, son œuvre cherche moins à illustrer qu'à révéler.",
+    "univers.p2": "Quatre axes traversent sa recherche : l'instrument comme matière vivante, la voix mélodique comme souffle, le mode comme architecture sensible, et le paysage comme source d'écoute et de composition. Le Oud, le violon, les silences et les matières du monde y deviennent les fragments d'une même géographie sonore.",
 
     "oud.eyebrow": "L'instrument",
     "oud.title": "Le Oud de Sensabyl, une architecture de résonance",
@@ -195,14 +185,8 @@ const translations: Translations = {
 
     "univers.eyebrow": "Musical universe",
     "univers.title": "From maqâms to inner landscapes",
-    "univers.c1.t": "The Oud as matrix",
-    "univers.c1.d": "An ancient instrument carrying a millennia-old memory, in his hands the Oud becomes a space for meditation, transmission and experimentation.",
-    "univers.c2.t": "The violin as a line of light",
-    "univers.c2.d": "The violin extends the voice of the Oud, opens melodic trajectories and inscribes the music in a sensitive dramaturgy.",
-    "univers.c3.t": "Improvisation & maqâms",
-    "univers.c3.d": "His work explores intervals, modes, subtle tensions and the breath of improvisation, between musical architecture and freedom of gesture.",
-    "univers.c4.t": "Stage, nature & contemporary creation",
-    "univers.c4.d": "His sonic research brings the stage, landscapes, natural matter and human stories into dialogue.",
+    "univers.p1": "Sensabyl Beghdadi's musical universe unfolds between heritage, improvisation and contemporary creation. Nourished by the maqâms, the resonances of the Maghreb, Andalusian memories and inner landscapes, her work seeks less to illustrate than to reveal.",
+    "univers.p2": "Four axes run through her research: the instrument as living matter, the melodic voice as breath, the mode as sensitive architecture, and the landscape as a source of listening and composition. The Oud, the violin, the silences and the materials of the world become fragments of a single sonic geography.",
 
     "oud.eyebrow": "The instrument",
     "oud.title": "Sensabyl's Oud, an architecture of resonance",
@@ -349,14 +333,8 @@ const translations: Translations = {
 
     "univers.eyebrow": "العالم الموسيقي",
     "univers.title": "من المقامات إلى المشاهد الداخلية",
-    "univers.c1.t": "العود كَمَصدر",
-    "univers.c1.d": "آلةٌ عريقة تحمل ذاكرةً مديدة، تصبح في يديه فضاءً للتأمّل والنقل والتجريب.",
-    "univers.c2.t": "الكمان كخطّ ضوء",
-    "univers.c2.d": "يمدّ الكمان صوتَ العود ويفتح مسارات لحنية ويُدرج الموسيقى في درامية حسّاسة.",
-    "univers.c3.t": "الارتجال والمقامات",
-    "univers.c3.d": "يستكشف عمله الفواصل والمقامات والتوترات الدقيقة وأنفاس الارتجال، بين العمارة الموسيقية وحرية الإيماء.",
-    "univers.c4.t": "الخشبة والطبيعة والإبداع المعاصر",
-    "univers.c4.d": "يُقيم بحثه الصوتيّ حواراً بين الخشبة والمشاهد والمواد الطبيعية والحكايات الإنسانية.",
+    "univers.p1": "ينبسط العالم الموسيقي لسنسبيل بغدادي بين الإرث والارتجال والإبداع المعاصر. متغذّياً من المقامات وأصداء المغرب الكبير والذاكرة الأندلسية والمشاهد الداخلية، يسعى عملها إلى الكشف أكثر من التوضيح.",
+    "univers.p2": "تتقاطع في بحثها أربعة محاور: الآلة كمادة حيّة، والصوت اللحني كنَفَس، والمقام كعمارة حسّاسة، والمشهد كمصدر للإصغاء والتأليف. فيصير العود والكمان والصمت ومواد العالم شظايا جغرافيا صوتية واحدة.",
 
     "oud.eyebrow": "الآلة",
     "oud.title": "عودُ سنسابيل، هندسةُ رنين",
