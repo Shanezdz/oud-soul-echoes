@@ -60,7 +60,8 @@ function SectionTitle({ eyebrow, title, children, align = "left" }: { eyebrow?: 
 }
 
 function Hero() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
+  const isAr = lang === "ar";
   return (
     <section className="relative flex min-h-screen items-end overflow-hidden">
       <img src={heroOud} alt="Oud" width={1920} height={1080} className="absolute inset-0 h-full w-full object-cover opacity-70" />
@@ -70,7 +71,11 @@ function Hero() {
       <div className="relative z-10 mx-auto w-full max-w-[1400px] px-6 pb-24 pt-40 md:px-10 md:pb-32">
         <p className="eyebrow mb-8 animate-rise">{t("hero.eyebrow")}</p>
         <h1 className="font-display text-[clamp(3.2rem,9vw,9rem)] leading-[0.9] text-ivory animate-rise">
-          Sensabyl<br /><span className="italic text-copper">Beghdadi</span>
+          {isAr ? (
+            <>سنسابيل<br /><span className="text-copper">بغدادي</span></>
+          ) : (
+            <>Sensabyl<br /><span className="italic text-copper">Beghdadi</span></>
+          )}
         </h1>
         <div className="mt-10 flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
           <div className="max-w-xl animate-rise" style={{ animationDelay: "0.2s" }}>
