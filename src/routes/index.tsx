@@ -5,6 +5,7 @@ import { useI18n } from "@/lib/i18n";
 
 import heroOud from "@/assets/hero-oud.jpg";
 import portrait from "@/assets/sensabyl-portrait.jpg";
+import taksimBayati from "@/assets/taksim-bayati.mp3";
 import oudHeadstock from "@/assets/oud-headstock.jpg";
 import oudStrings from "@/assets/oud-strings.jpg";
 import violin from "@/assets/violin.jpg";
