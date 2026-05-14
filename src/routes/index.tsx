@@ -291,17 +291,27 @@ function Ecouter() {
   );
 }
 
-function FauxPlayer({ index, t: title, d, dur }: { index: number; t: string; d: string; dur: string }) {
+function FauxPlayer({ index, t: title, d, dur, src }: { index: number; t: string; d: string; dur: string; src?: string }) {
   const [playing, setPlaying] = useState(false);
+  const audioRef = React.useRef<HTMLAudioElement | null>(null);
+  const toggle = () => {
+    if (!src) { setPlaying((v) => !v); return; }
+    const a = audioRef.current;
+    if (!a) return;
+    if (a.paused) { a.play(); setPlaying(true); } else { a.pause(); setPlaying(false); }
+  };
   return (
     <div className="grid grid-cols-[auto_1fr_auto] items-center gap-6 py-6">
-      <button onClick={() => setPlaying((v) => !v)} className="flex h-12 w-12 items-center justify-center rounded-full border border-copper text-copper transition hover:bg-copper hover:text-primary-foreground" aria-label={playing ? "Pause" : "Play"}>
+      <button onClick={toggle} className="flex h-12 w-12 items-center justify-center rounded-full border border-copper text-copper transition hover:bg-copper hover:text-primary-foreground" aria-label={playing ? "Pause" : "Play"}>
         {playing ? <span className="flex gap-1"><span className="h-3 w-1 bg-current" /><span className="h-3 w-1 bg-current" /></span> : <span className="ml-0.5 border-y-[6px] border-l-[9px] border-y-transparent border-l-current" />}
       </button>
       <div>
         <p className="font-display text-xs tracking-[0.3em] text-copper">{String(index).padStart(2, "0")}</p>
         <p className="mt-1 font-display text-xl text-ivory md:text-2xl">{title}</p>
         <p className="text-sm text-muted-foreground">{d}</p>
+        {src && (
+          <audio ref={audioRef} src={src} preload="none" onEnded={() => setPlaying(false)} onPause={() => setPlaying(false)} onPlay={() => setPlaying(true)} className="sr-only" />
+        )}
         {playing && (
           <div className="mt-3 flex h-6 items-end gap-0.5">
             {Array.from({ length: 40 }).map((_, i) => (
