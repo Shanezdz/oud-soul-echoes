@@ -293,7 +293,7 @@ function Ecouter() {
 
 function FauxPlayer({ index, t: title, d, dur, src }: { index: number; t: string; d: string; dur: string; src?: string }) {
   const [playing, setPlaying] = useState(false);
-  const audioRef = React.useRef<HTMLAudioElement | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
   const toggle = () => {
     if (!src) { setPlaying((v) => !v); return; }
     const a = audioRef.current;
