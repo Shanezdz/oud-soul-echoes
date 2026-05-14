@@ -72,7 +72,7 @@ function Home() {
       <Parcours />
       <Scene />
       <Residences />
-      <Galerie />
+      
       <Ecouter />
       <Presse />
       <Contact />
@@ -559,87 +559,6 @@ function Residences() {
   );
 }
 
-/* ------------------------------ GALERIE --------------------------- */
-function Galerie() {
-  const filters = ["Tout", "Portraits", "Scène", "Oud", "Violon", "Coulisses", "Calligraphies", "Résidences"];
-  const items = [
-    { src: portrait, cat: "Portraits", h: "tall" },
-    { src: oudHeadstock, cat: "Oud", h: "tall" },
-    { src: playing, cat: "Scène", h: "wide" },
-    { src: oudStrings, cat: "Oud", h: "square" },
-    { src: violin, cat: "Violon", h: "square" },
-    { src: stage, cat: "Coulisses", h: "tall" },
-    { src: calligraphy, cat: "Calligraphies", h: "square" },
-    { src: desert, cat: "Résidences", h: "wide" },
-    { src: heroOud, cat: "Oud", h: "wide" },
-  ];
-  const [active, setActive] = useState("Tout");
-  const [open, setOpen] = useState<string | null>(null);
-  const filtered = active === "Tout" ? items : items.filter((i) => i.cat === active);
-
-  return (
-    <section id="galerie" className="relative border-t border-border px-6 py-32 md:px-10 md:py-44">
-      <div className="mx-auto max-w-[1400px]">
-        <div className="flex flex-col items-start justify-between gap-10 md:flex-row md:items-end">
-          <SectionTitle eyebrow="Galerie" title="Images d'atelier, de scène et de mémoire" />
-          <div className="flex flex-wrap gap-2">
-            {filters.map((f) => (
-              <button
-                key={f}
-                onClick={() => setActive(f)}
-                className={`rounded-full border px-4 py-2 text-[0.7rem] uppercase tracking-[0.2em] transition ${
-                  active === f
-                    ? "border-copper bg-copper text-primary-foreground"
-                    : "border-border text-muted-foreground hover:border-copper hover:text-ivory"
-                }`}
-              >
-                {f}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-16 columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
-          {filtered.map((it, i) => (
-            <button
-              key={i}
-              onClick={() => setOpen(it.src)}
-              className="group relative block w-full overflow-hidden break-inside-avoid"
-            >
-              <img
-                src={it.src}
-                alt={it.cat}
-                loading="lazy"
-                className={`w-full object-cover transition duration-700 group-hover:scale-105 ${
-                  it.h === "tall" ? "aspect-[3/4]" : it.h === "wide" ? "aspect-[16/10]" : "aspect-square"
-                }`}
-              />
-              <div className="absolute inset-0 bg-background/0 transition group-hover:bg-background/30" />
-              <span className="absolute bottom-3 left-3 rounded-full bg-background/70 px-3 py-1 text-[0.65rem] uppercase tracking-[0.2em] text-ivory backdrop-blur">
-                {it.cat}
-              </span>
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {open && (
-        <div
-          onClick={() => setOpen(null)}
-          className="fixed inset-0 z-[60] flex items-center justify-center bg-background/95 p-6 backdrop-blur-md"
-        >
-          <img src={open} alt="" className="max-h-[90vh] max-w-[95vw] object-contain" />
-          <button
-            onClick={() => setOpen(null)}
-            className="absolute right-6 top-6 text-sm uppercase tracking-[0.2em] text-ivory"
-          >
-            Fermer ✕
-          </button>
-        </div>
-      )}
-    </section>
-  );
-}
 
 /* ------------------------------ ECOUTER --------------------------- */
 function Ecouter() {
@@ -893,7 +812,7 @@ function Footer() {
             {[
               ["#top", "Accueil"], ["#about", "À propos"],
               ["#univers", "Univers"], ["#parcours", "Parcours"],
-              ["#galerie", "Galerie"], ["#ecouter", "Écouter"],
+              ["#ecouter", "Écouter"],
               ["#contact", "Contact"],
             ].map(([h, l]) => (
               <li key={h}>
