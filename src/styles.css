@@ -38,8 +38,8 @@
 
   --font-display: "Cormorant Garamond", "Cormorant", ui-serif, Georgia, serif;
   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-arabic-display: "Reem Kufi", "Tajawal", sans-serif;
-  --font-arabic-body: "Tajawal", "Noto Kufi Arabic", sans-serif;
+  --font-arabic-display: "Readex Pro", "IBM Plex Sans Arabic", sans-serif;
+  --font-arabic-body: "IBM Plex Sans Arabic", "Readex Pro", sans-serif;
 }
 
 :root {
@@ -201,17 +201,61 @@ html[dir="rtl"] body,
 html[data-lang="ar"] body {
   font-family: var(--font-arabic-body);
   letter-spacing: 0;
+  font-weight: 300;
 }
-html[data-lang="ar"] h1,
+
+/* Display (h1) — slightly tighter than the Latin clamp so Arabic glyphs breathe */
+html[data-lang="ar"] h1 {
+  font-family: var(--font-arabic-display);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 7.2vw, 7rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+/* Section titles & sub-headings */
 html[data-lang="ar"] h2,
-html[data-lang="ar"] h3,
-html[data-lang="ar"] h4,
 html[data-lang="ar"] .font-display {
   font-family: var(--font-arabic-display);
   font-weight: 500;
   letter-spacing: 0;
+  line-height: 1.25;
 }
+html[data-lang="ar"] h2 {
+  font-size: clamp(1.9rem, 4.2vw, 3.4rem);
+}
+html[data-lang="ar"] h3 {
+  font-family: var(--font-arabic-display);
+  font-weight: 500;
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+html[data-lang="ar"] h4 {
+  font-family: var(--font-arabic-display);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/* Body copy — readable Arabic line-height */
+html[data-lang="ar"] p {
+  line-height: 1.95;
+  letter-spacing: 0;
+}
+
+/* Italic doesn't render in Arabic — neutralize and emphasize via weight/color instead */
+html[data-lang="ar"] em,
+html[data-lang="ar"] i,
+html[data-lang="ar"] .italic {
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Eyebrow / small-caps style — Arabic doesn't have casing, lower the tracking */
 html[data-lang="ar"] .eyebrow {
   font-family: var(--font-arabic-body);
-  letter-spacing: 0.15em;
+  text-transform: none;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  font-weight: 500;
 }
