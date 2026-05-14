@@ -538,9 +538,9 @@ function Residences() {
           eyebrow="Résidences & recherches sonores"
           title="Art, récits et nature"
         >
-          Dans ses recherches récentes — notamment la résidence Tilal Utique —
-          Sensabyl Beghdadi interroge les liens entre musique, environnement
-          naturel et création sonore. Le paysage devient un partenaire musical.
+          Dans ses recherches récentes, Sensabyl Beghdadi interroge les liens
+          entre musique, environnement naturel et création sonore. Le paysage
+          devient un partenaire musical.
         </SectionTitle>
 
         <div className="mt-20 grid gap-px bg-border md:grid-cols-3">
