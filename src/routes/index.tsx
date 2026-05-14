@@ -52,7 +52,7 @@ function Home() {
 function SectionTitle({ eyebrow, title, children, align = "left" }: { eyebrow?: string; title: string; children?: React.ReactNode; align?: "left" | "center" }) {
   return (
     <div className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : ""}`}>
-      {eyebrow && <p className="eyebrow mb-5">{eyebrow}</p>}
+      {eyebrow && <p className="eyebrow mb-5 text-xl">{eyebrow}</p>}
       <h2 className="font-display text-4xl leading-[1.05] text-ivory text-balance md:text-6xl">{title}</h2>
       {children && <div className="mt-6 text-base leading-relaxed text-muted-foreground text-pretty md:text-lg">{children}</div>}
     </div>
