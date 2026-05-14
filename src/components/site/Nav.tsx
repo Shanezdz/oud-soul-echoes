@@ -9,7 +9,7 @@ const links = [
   { href: "#residences", label: "Résidences" },
   { href: "#galerie", label: "Galerie" },
   { href: "#ecouter", label: "Écouter" },
-  { href: "#presse", label: "Presse" },
+  
   { href: "#contact", label: "Contact" },
 ];
 
@@ -48,12 +48,6 @@ export function Nav() {
           ))}
         </nav>
 
-        <a
-          href="#contact"
-          className="hidden rounded-full border border-copper/60 px-5 py-2 text-[0.72rem] uppercase tracking-[0.25em] text-copper transition hover:bg-copper hover:text-primary-foreground md:inline-block"
-        >
-          Programmer
-        </a>
 
         <button
           aria-label="Menu"
