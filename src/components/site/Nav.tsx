@@ -9,7 +9,7 @@ const links = [
   { href: "#residences", label: "Résidences" },
   { href: "#galerie", label: "Galerie" },
   { href: "#ecouter", label: "Écouter" },
-  { href: "#presse", label: "Presse" },
+  
   { href: "#contact", label: "Contact" },
 ];
 
