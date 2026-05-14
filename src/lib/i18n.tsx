@@ -185,14 +185,8 @@ const translations: Translations = {
 
     "univers.eyebrow": "Musical universe",
     "univers.title": "From maqâms to inner landscapes",
-    "univers.c1.t": "The Oud as matrix",
-    "univers.c1.d": "An ancient instrument carrying a millennia-old memory, in his hands the Oud becomes a space for meditation, transmission and experimentation.",
-    "univers.c2.t": "The violin as a line of light",
-    "univers.c2.d": "The violin extends the voice of the Oud, opens melodic trajectories and inscribes the music in a sensitive dramaturgy.",
-    "univers.c3.t": "Improvisation & maqâms",
-    "univers.c3.d": "His work explores intervals, modes, subtle tensions and the breath of improvisation, between musical architecture and freedom of gesture.",
-    "univers.c4.t": "Stage, nature & contemporary creation",
-    "univers.c4.d": "His sonic research brings the stage, landscapes, natural matter and human stories into dialogue.",
+    "univers.p1": "Sensabyl Beghdadi's musical universe unfolds between heritage, improvisation and contemporary creation. Nourished by the maqâms, the resonances of the Maghreb, Andalusian memories and inner landscapes, her work seeks less to illustrate than to reveal.",
+    "univers.p2": "Four axes run through her research: the instrument as living matter, the melodic voice as breath, the mode as sensitive architecture, and the landscape as a source of listening and composition. The Oud, the violin, the silences and the materials of the world become fragments of a single sonic geography.",
 
     "oud.eyebrow": "The instrument",
     "oud.title": "Sensabyl's Oud, an architecture of resonance",
