@@ -4,7 +4,7 @@ import { useI18n } from "@/lib/i18n";
 
 import heroOud from "@/assets/hero-oud.jpg";
 import portrait from "@/assets/sensabyl-portrait.jpg";
-import oudHeadstock from "@/assets/oud-headstock.jpg";
+import oudPlaying from "@/assets/sensabyl-playing.jpg";
 import oudStrings from "@/assets/oud-strings.jpg";
 import violin from "@/assets/violin.jpg";
 import desert from "@/assets/desert-night.jpg";
@@ -132,7 +132,7 @@ function OudSection() {
         <div className="mt-20 grid gap-12 md:grid-cols-12">
           <div className="relative md:col-span-7">
             <div className="relative overflow-hidden">
-              <img src={oudHeadstock} alt="Oud" loading="lazy" width={1200} height={1500} className="aspect-[4/5] w-full object-cover" />
+              <img src={oudPlaying} alt="Oud" loading="lazy" width={1200} height={1500} className="aspect-[4/5] w-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-background/40 via-transparent to-background/60" />
               {parts.map((p) => (
                 <button key={p.id} onMouseEnter={() => setActive(p.id)} onClick={() => setActive(p.id)} style={{ left: p.x, top: p.y }} className={`absolute -translate-x-1/2 -translate-y-1/2 transition ${active === p.id ? "scale-110" : ""}`} aria-label={t(`oud.${p.id}.l`)}>
