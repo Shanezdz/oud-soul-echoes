@@ -167,7 +167,7 @@ function OudSection() {
 
 function Parcours() {
   const { t } = useI18n();
-  const years = ["1995–2010","2007","2015–2017","2018","2019","2021","2022","2023","2024","2025","2026"];
+  const years = ["1995–2010","2007","2015–2017","2018","2019","2021","2022","2023","2024","2025","2026","18 juin 2026"];
   return (
     <section id="parcours" className="relative border-t border-border px-6 py-32 md:px-10 md:py-44">
       <div className="mx-auto max-w-[1280px]">
