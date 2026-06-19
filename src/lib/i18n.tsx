@@ -87,6 +87,8 @@ const translations: Translations = {
     "p.10.d": "Composition et interprétation continue avec Ziani Cherif Ayad.",
     "p.11.t": "Atelier de chants et comédie musicale",
     "p.11.d": "Théâtre régional de Naâma — performances solo.",
+    "p.12.t": "Récital Oud & déclamation poétique — شوقي عبد الأمير",
+    "p.12.d": "Accompagnement du grand Poète Irakien شوقي عبد الأمير، المدير العام لمعهد العالم العربي بباريس، dans un récital alliant improvisation et voix poétique.",
 
     "scene.eyebrow": "Scène · Théâtre · Cinéma",
     "scene.title": "Musique pour l'image, la scène et la parole",
@@ -235,6 +237,8 @@ const translations: Translations = {
     "p.10.d": "Continued composition and performance with Ziani Cherif Ayad.",
     "p.11.t": "Singing and musical theatre workshop",
     "p.11.d": "Naâma regional theatre — solo performances.",
+    "p.12.t": "Oud recital & poetic declamation — Shawkī ʿAbd al-Amīr",
+    "p.12.d": "Accompaniment of the great Iraqi poet Shawkī ʿAbd al-Amīr, General Director of the Arab World Institute in Paris, in a recital combining improvisation and poetic voice.",
 
     "scene.eyebrow": "Stage · Theatre · Cinema",
     "scene.title": "Music for image, stage and word",
@@ -383,6 +387,8 @@ const translations: Translations = {
     "p.10.d": "تلحينٌ وعزفٌ متواصلان مع زياني شريف عياد.",
     "p.11.t": "ورشةُ غناءٍ ومسرحٍ غنائي",
     "p.11.d": "المسرح الجهوي بالنعامة — عروض منفردة.",
+    "p.12.t": "أمسية عود وإنشاد شعري — شوقي عبد الأمير",
+    "p.12.d": "مرافقة الشاعر العراقي الكبير شوقي عبد الأمير، المدير العام لمعهد العالم العربي بباريس، في أمسية تجمع بين الارتجال والصوت الشعري.",
 
     "scene.eyebrow": "الخشبة · المسرح · السينما",
     "scene.title": "موسيقى للصورة والخشبة والكلمة",
